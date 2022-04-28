@@ -84,5 +84,10 @@ $data = new CD($data);
 echo $data;
 $data->addStock(69);
 
-echo "</div>"
+echo "</div>";
+
+$reader = new FileReader('Classes\bestand.csv');
+$fileData = $reader->parse();
+echo "$reader";
+
 ?>
